@@ -1,0 +1,431 @@
+[27-05-2024 01:34 PM] +91 99537 90486: clc
+function[]= addition(m, n, A, B)
+    C=zeros(m,n);
+    C=A+B;
+    disp("by SARIK ")
+    disp("First Matrix")
+    disp(A)
+    disp("Second Matrix")
+    disp(B)
+    disp("Addition Matrix")
+    disp(C)
+endfunction
+
+addition(2, 2, [4 7; 8 3], [5 4; 6 9])
+
+
+
+
+1 (a)
+[27-05-2024 01:34 PM] +91 99537 90486: clc
+disp("by SARIK")
+m = input("Enter the no. of rows: ");
+n = input("Enter the no. of columns: ");
+if m==n
+    disp("matrix can be added");
+else
+    disp("matrix cannot be added");
+    break;
+end
+
+disp("Enter Matrix A");
+A = zeros(m, n);
+for i=1:m
+    for j=1:n
+        A(i, j) = input('');
+    end
+end
+
+disp("Enter Matrix B");
+B = zeros(m, n);
+for i=1:m
+    for j=1:n
+        B(i, j) = input('');
+    end
+end
+
+C = A+B;
+
+disp("Matrix A");
+disp(A);
+disp("Matrix B");
+disp(B);
+disp("Addition Matrix");
+disp(C);
+break;
+
+
+
+
+
+
+ 1 (b)
+[27-05-2024 01:35 PM] +91 99537 90486: clc
+function[] = multiplication(m, n, A, B)
+    C = zeros(m, n);
+    disp(C)
+    C = A*B;
+    disp("by Neeraj Narwal");
+    disp("First Matrix");
+    disp(A);
+    disp("First Matrix");
+    disp(B);
+    disp("Multiplied Matrix");
+    disp(C);
+endfunction
+
+multiplication(2, 3, [4 6; 3 2], [5 5; 8 2])
+
+
+
+
+
+2 (a)
+[27-05-2024 01:35 PM] +91 99537 90486: clc
+m = input("Enter no of rows for first matrix: ");
+n = input("Enter no of columns for first matrix: ");
+
+s = input("Enter no of rows for first matrix: ");
+t = input("Enter no of columns for first matrix: ");
+
+
+if n==s
+    disp("Matrix can be multiplied");
+else
+    disp("Matrix cannot be multiplied");
+    break;
+end
+
+A = zeros(m, n);
+disp("Enter First Matrix");
+for i=1:m
+    for j=1:n
+        A(i, j) = input('');
+    end
+end
+
+B = zeros(s, t);
+disp("Enter Second Matrix");
+for i=1:s
+    for j=1:t
+        B(i, j) = input('');
+    end
+end
+
+C = A*B;
+
+disp("First Matrix");
+disp(A);
+disp("Second Matrix");
+disp(B);
+disp("Multiplied Matrix");
+disp(C);
+
+
+2 nd (b)
+[27-05-2024 01:36 PM] +91 99537 90486: clc
+function[]= transpose(A)
+    C=A';
+    disp("by SARIK")
+    disp("Input Matrix")
+    disp(A)
+    disp("Transpose Matrix")
+    disp(C)
+endfunction
+
+transpose([4 7 9 4; 8 3 2 5])
+
+
+
+3rd (a)
+[27-05-2024 01:36 PM] +91 99537 90486: clc
+m = input("Enter no of rows for matrix: ");
+n = input("Enter no of columns for matrix: ");
+
+A = zeros(m, n);
+C = zeros(n, m);
+
+disp("Enter Matrix");
+for i=1:m
+    for j=1:n
+        A(i, j) = input('');
+    end
+end
+
+for i=1:m
+    for j=1:n
+        C(j, i) = A(i, j);
+    end
+end
+
+disp("Entered Matrix");
+disp(A);
+disp("Transpose Matrix");
+disp(C);
+
+
+3rd (b)
+[27-05-2024 01:37 PM] +91 99537 90486: clc
+disp("SARIK, EEE")
+n=4 //edit
+disp("No. of observations are ", n)
+x=[0 1 2 3] //edit
+disp("the value of x is ", x)
+F=[36 40 22 2] //edit
+disp("the value of f ", F)
+
+Mean=sum(F.*x)/sum(F)
+disp("mean of the distribution is", Mean)
+p=Mean/n
+EF=sum(F)*binomial(p,n-1)
+disp("given frequencies", EF)
+
+plot2d3(0:n-1,F,style=[color("red")])
+plot2d(0:n-1,EF,style=[color("blue")])
+
+
+4th (b). Graph wala ..
+[27-05-2024 01:38 PM] +91 99537 90486: clc
+disp(SARIK.eee)
+
+n=input("enter the value of n :");
+disp(value of X):
+
+for i = 1:4
+
+x(i)=input(" ");end
+
+disp("values of f "); for i= 1:4
+
+f(i)= input(" "); end
+
+for i =1:4
+
+fx(i) =f(i)*x(i);end
+
+sf=0
+
+sfx=0; for i = 1:4
+
+sf =sf+f(i)
+
+sfx=sfx+fx(i);end
+
+mean sfx/sf;p=mean/n;
+
+q = 1 - p 
+combo=(1,3,3,1);
+
+N = 100
+
+for 1dx = 1:4
+
+ans(i)=combo(i)" (p*x(i))(q**(n-x(i)));ans(i)=N*ans(i); 
+end
+
+disp('expected frequencies are'); disp(ans)
+
+
+4th(b)
+[27-05-2024 01:43 PM] +91 99537 90486: clc
+disp("SARIK")
+n = input("Enter value of n: ")
+p = input("Enter value of p: ")
+q = 1-p;
+X = [0,1,2,3];
+for x = 1:4
+    frequency(x) = input("Enter frequency: ")
+end
+N=100;
+combo = [1,3,3,1];
+disp("Expected frequencys are: ");
+for x = 1:4;
+    ans(x) = combo(x)(pX(x))(q**(n-X(x)));
+    ans(x) = N*ans(x);
+end
+disp(ans)
+
+
+
+
+5 th.
+[27-05-2024 01:48 PM] +91 99537 90486: clc
+clear
+n=input("how many workers and job do you have	:");
+printf("\nenter time of\n\n");
+for i=1:n
+for j=1:n
+printf("worker %d  job%d :",i,j);
+T(i,j)=input('\');
+end
+end
+printf("\nDATA YOU ENTERED IS	:\n  ");
+for i=1:n
+printf("job%d ",i);
+end
+for i=1:n
+printf("\nworker%d  ",i);
+for j=1:n
+printf("%d ",T(i,j));
+end
+end
+minim=[1000,1000,1000,1000,1000,1000,1000,1000,1000];
+for i=1:n
+for j=1:n
+if(T(i,j)<=minim(i)) then
+minim(i)=T(i,j);
+end
+end
+end
+printf("\n");
+for i=1:n
+for j=1:n
+T(i,j)=T(i,j)-minim(i);
+end
+end
+printf("\n");
+printf("\n\n*data after row minimum decrement is*\n\t\t");
+for i=1:n
+printf("job%d ",i);
+end
+for i=1:n
+printf("\nworker%d  ",i);
+for j=1:n
+printf("%d ",T(i,j));
+end
+end
+zerr=[1000,1000,1000,1000,1000,1000];
+zerc=[1000,1000,1000,1000,1000,1000];
+for i=1:n
+for j=1:n
+if(T(i,j)==0) then
+zerr(i)=0;
+zerc(j)=0;
+end
+end
+end
+f=0;
+y=0;
+for i=1:n
+if(zerr(i)) then
+f=1;
+end
+end
+for i=1:n
+if(zerc(i)) then
+y=1;
+end
+end
+if((f==1)||(y==1)) then
+mn=[1000,1000,1000,1000,1000,1000,1000,1000,1000];
+for j=1:n
+for i=1:n
+if(T(i,j)<=mn(j)) then
+mn(j)=T(i,j);
+end
+end
+end
+for j=1:n
+for i=1:n
+T(i,j)=T(i,j)-mn(j);
+end
+end
+printf("\n\n*data after column minimum decrement is*\n");
+for i=1:n
+printf("job%d ",i);
+end
+for i=1:n
+printf("\nworker%d  ",i);
+for j=1:n
+printf("%d ",T(i,j));
+end
+end
+end
+printf("\n\n\n**Final job assignment is");
+for i=1:n
+for j=1:n
+if(T(i,j)==0) then 
+printf("\n assign job %d to worker %d",j,i);
+for z=1:n
+if (z==i) then
+continue;
+end
+if(T(z,j)==0) then
+T(z,j)=1000;
+end
+for l=1:n
+if(l==j) then 
+continue;
+ end
+if(T(i,l)==0) then
+T(i,l)=1000;
+end
+end
+end
+end 
+end
+end
+printf("\n");
+
+
+
+
+
+
+
+10 th pslp
+[27-05-2024 01:49 PM] +91 99537 90486: clc
+disp("SARIK EEE")
+ disp('enter the Matrix')
+ for i=1:2
+ for j=1:2
+ A(i,j)=input('\');
+ end
+ end
+ b=A(1,1)+A(2,2);
+ c=A(1,1)*A(2,2)-A(1,2) *A(2,1);
+ disp('The characteristic equation is:')
+ disp(['e^2 + ' string(-b) '*e + 'string(c) ' ~= 0'])
+ el=(b+sqrt(b^2-4*c))/2;
+ e2=(b-sqrt (b^2-4*c))/2;
+ disp('First Eigen-value is:');
+ disp(el)
+ disp('Second Eigen value is:');
+disp (e2)
+
+
+
+11 th eigen value
+[27-05-2024 01:50 PM] +91 99537 90486: clc
+ disp("SARIK EEE")
+ disp('enter the Matrix')
+ for i=1:2
+ for j=1:2
+ A(i,j)=input('\');
+ end
+ end
+ b=A(1,1)+A(2,2);
+ c=A(1,1)*A(2,2)-A(1,2) *A(2,1);
+ disp('The characteristic equation is:')
+ disp(['e^2 + ' string(-b) '*e + 'string(c) ' ~= 0'])
+ el=(b+sqrt(b^2-4*c))/2;
+ e2=(b-sqrt (b^2-4*c))/2;
+ if A(1,2) ~= 0
+ vl= [A(1,2); el-A(1,1)];
+ v2= [A(1,2); e2-A(1,1)];
+ elseif A(2,1) ~= 0
+ vl = [el-A(2,2); A(2,1)];
+ v2= [e2-A(2,2); A(2,1)];
+ else
+ vl = [1; 0];
+ v2 = [0; 1];
+ end
+ disp('First Eigen-vector-is:');
+ disp (vl)
+ disp('Second Eigen vector is:');
+ disp(v2)
+
+
+
+
+12 th eigen vector
